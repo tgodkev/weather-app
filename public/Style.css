@@ -1,0 +1,65 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: papayawhip;
+}
+
+
+.one{
+    display: inline-block;
+    position: grid;
+    border: solid;
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+.two{
+    border:solid;
+    display: inline-block;
+    position: grid;
+    width: 20%;
+    height: 20%;
+    margin-right: 100%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+.three{
+    border: solid;
+    display: inline-block;
+    position: grid;
+    width: 20%;
+    height: 20%;
+    margin-right: 100%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+.four{
+    border: solid;
+    display: inline-block;
+    position: grid;
+    width: 20%;
+    height: 20%;
+    margin-right: 100%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
+
+.five{
+    border: solid;
+    display: inline-block;
+    position: grid;
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+   
+}
+
+.input{
+    margin-left: 40%;
+    margin-bottom: 2%;
+}
