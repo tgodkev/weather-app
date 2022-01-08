@@ -105,8 +105,8 @@ function Weather(){
 
             <div className='one'>
             <img src={'https://openweathermap.org/img/w/' + icon + '.png'} alt="" />
-            <h1> todays temp is. {feelsLike} °</h1>
-            <h6>{firstTimeStamp}</h6>
+            <h1> The temp will be {feelsLike} ° </h1>
+            <h6> {firstTimeStamp}</h6>
             </div>
             <div className='two'>
             <img src={'https://openweathermap.org/img/w/' + secondIcon + '.png'} alt="" />
