@@ -25,6 +25,10 @@ body{
     border: solid 1px;
     color: white;
 }
+.current img{
+    width: 15%;
+    height: 15%;
+}
 
 .one{
    
@@ -37,6 +41,10 @@ body{
     font-size: 30px;
     border: solid 1px;
     color: white;
+}
+.one img{
+    width: 15%;
+    height: 15%;
 }
 
 .two{
@@ -53,6 +61,11 @@ body{
     color: white;
 }
 
+.two img{
+    width: 15%;
+    height: 15%;
+}
+
 .three{
     
     position: grid;
@@ -66,6 +79,12 @@ body{
     border: solid 1px;
     color: white;
 }
+
+.three img{
+    width: 15%;
+    height: 15%;
+}
+
 
 .four{
    
@@ -81,6 +100,11 @@ body{
     color: white;
 }
 
+.four img{
+    width: 15%;
+    height: 15%;
+}
+
 .five{
     display: inline-block;
     position: grid;
@@ -93,6 +117,11 @@ body{
     border: solid 1px;
     color: white;
    
+}
+
+.five img{
+    width: 15%;
+    height: 15%;
 }
 
 .input{
