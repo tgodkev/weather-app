@@ -130,6 +130,7 @@ body{
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
   color: white;
+  padding-bottom: 10%;
 }
 
 .search{
@@ -143,7 +144,7 @@ body{
     position: relative;
     margin-top: 10%;
     margin-left: 25%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     color: white;
     font-family: 'The Nautigal', cursive;
     font-size: 60px;
