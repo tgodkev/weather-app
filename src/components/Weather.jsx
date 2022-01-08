@@ -32,10 +32,15 @@ function Weather(){
     const[userCity, setUserCity] = useState('');
     const[cityName, setCityName] =  useState('');
     
+
+    //display content
+
+    const[show, setShow] = useState(false)
     
     function handleClick(e){
         setUserCity(city);
         e.preventDefault();
+        setShow(!show)
     }
 
     async function getWeather(){
@@ -98,34 +103,34 @@ function Weather(){
                 </form>
             </div>
 
-            <div className='current'>
+         { show && <div className='current'>
             <img src={'https://openweathermap.org/img/w/' + currentIcon + '.png'} alt="" />
-            <h1> Current Temp. {currentTemp} °</h1>
-            </div>
+             <h1> Current Temp. {currentTemp} °</h1>
+            </div>}
 
-            <div className='one'>
-            <img src={'https://openweathermap.org/img/w/' + icon + '.png'} alt="" />
-            <h1> The temp will be {feelsLike} ° </h1>
+             <div className='one'>
+              <img src={'https://openweathermap.org/img/w/' + icon + '.png'} alt="" />
+            <h1>  {feelsLike} ° </h1>
             <h6> {firstTimeStamp}</h6>
             </div>
             <div className='two'>
             <img src={'https://openweathermap.org/img/w/' + secondIcon + '.png'} alt="" />
-            <h1>The temp will be {nextDay}° </h1>
+            <h1>{nextDay}° </h1>
             <h6>{secondTimeStamp}</h6>
             </div>
             <div className='three'>
             <img src={'https://openweathermap.org/img/w/' + thirdIcon + '.png'} alt="" />
-            <h1>the temp will be {dayThree}° </h1>
+            <h1> {dayThree}° </h1>
             <h6>{thirdTimeStamp}</h6>
             </div>
             <div className='four'>
             <img src={'https://openweathermap.org/img/w/' + fourthIcon + '.png'} alt="" />
-            <h1>the temp will be {dayFour}° </h1>
+            <h1> {dayFour}° </h1>
             <h6>{fourthTimeStamp}</h6>
             </div>
             <div className='five'>
             <img src={'https://openweathermap.org/img/w/' + fifthIcon + '.png'} alt="" />
-            <h1>the temp will be {dayFive}° </h1>
+            <h1> {dayFive}° </h1>
             <h6>{fifthTimeStamp}</h6>
             
             </div>
