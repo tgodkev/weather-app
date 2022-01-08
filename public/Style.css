@@ -1,46 +1,63 @@
 body{
-    padding: 0px;
+    width: 100%;
+    height: 100%;
     margin: 0px;
-    background-color: papayawhip;
+    padding: 0px;
+    overflow-x: hidden;
+
+    background-image: url('./wp9359084.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
 }
 
 
-.one{
-    display: inline-block;
+.current{
     position: grid;
     width: 20%;
     height: 20%;
-    margin-left: 30%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    background-color: transparent;
+    border: dotted 7px
+}
+
+.one{
+   
+    position: grid;
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
     margin-bottom: 2%;
 }
 
 .two{
-    display: inline-block;
+   
     position: grid;
     width: 20%;
     height: 20%;
-    margin-right: 100%;
-    margin-left: 30%;
+   
+    margin-left: 40%;
     margin-bottom: 2%;
 }
 
 .three{
-    display: inline-block;
+    
     position: grid;
     width: 20%;
     height: 20%;
-    margin-right: 100%;
-    margin-left: 30%;
+   
+    margin-left: 40%;
     margin-bottom: 2%;
 }
 
 .four{
-    display: inline-block;
+   
     position: grid;
     width: 20%;
     height: 20%;
-    margin-right: 100%;
-    margin-left: 30%;
+    
+    margin-left: 40%;
     margin-bottom: 2%;
 }
 
@@ -49,16 +66,19 @@ body{
     position: grid;
     width: 20%;
     height: 20%;
-    margin-left: 30%;
+    margin-left: 40%;
     margin-bottom: 2%;
    
 }
 
 .input{
-    margin-left: 30%;
+    margin-left: 40%;
     margin-bottom: 2%;
 }
 
+.search{
+    
+}
 
 
 .header{
@@ -68,4 +88,7 @@ body{
     margin-top: 20%;
     margin-left: 20%;
     margin-bottom: 20%;
+    color: white;
+    font-family: 'The Nautigal', cursive;
+    font-size: 60px;
 }

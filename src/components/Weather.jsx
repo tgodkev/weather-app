@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 function Weather(){
     //state for day temps.
+   const[currentTemp, setCurrentTemp] = useState('');
     const[feelsLike, setFeelsLike] = useState('');
     const[nextDay, setNextDay] = useState('');
     const[dayThree, setDayThree] = useState('');
@@ -23,11 +24,13 @@ function Weather(){
     const[thirdIcon, setThirdIcon] = useState('');
     const[fourthIcon, setFourthIcon] = useState('');
     const[fifthIcon, setFifthIcon] = useState('');
+    const[currentIcon, setCurrentIcon] = useState('');
 
 
     //state for user input for zip.
     const[city, setCity] = useState('');
     const[userCity, setUserCity] = useState('');
+    const[cityName, setCityName] =  useState('');
     
     
     function handleClick(e){
@@ -41,9 +44,9 @@ function Weather(){
         
         //console.log(weatherData.list)
 
-        setFeelsLike(weatherData.list[3].main.temp)
-        setIcon(weatherData.list[3].weather[0].icon)
-        setFirstTimeStamp(weatherData.list[3].dt_txt)
+        setFeelsLike(weatherData.list[0].main.temp)
+        setIcon(weatherData.list[0].weather[0].icon)
+        setFirstTimeStamp(weatherData.list[0].dt_txt)
 
         setNextDay(weatherData.list[11].main.temp)
         setSecondIcon(weatherData.list[11].weather[0].icon)
@@ -64,6 +67,18 @@ function Weather(){
     }
     getWeather();
 
+
+    async function currentWeather(){
+        const response = await fetch('https://api.openweathermap.org/data/2.5/weather?zip='+ userCity + '&units=imperial&appid=301b282421d5ab0658e1410019293854')
+        const currentData = await response.json();
+        setCurrentTemp(currentData.main.temp)
+        setCurrentIcon(currentData.weather[0].icon)
+        setCityName(currentData.name)
+        console.log(currentData)
+    }
+
+    currentWeather();
+  
     //console.log(city)
 
     return(
@@ -72,17 +87,23 @@ function Weather(){
                 <form 
                 onSubmit={handleClick}
                 >
-                    <h1>5 Day weather forcast.</h1>
+                    <h1>5 Day weather forcast for {cityName}.</h1>
                     <input type="text" 
                         onChange={e => setCity(e.target.value)}
                         value={city}
                         placeholder='Enter Zip.'
+                        className='search'
                     />
                     <button type='submit'> submit .</button>
                 </form>
             </div>
+
+            <div className='current'>
+            <img src={'https://openweathermap.org/img/w/' + currentIcon + '.png'} alt="" />
+            <h1> Current Temp. {currentTemp} °</h1>
+            </div>
+
             <div className='one'>
-            
             <img src={'https://openweathermap.org/img/w/' + icon + '.png'} alt="" />
             <h1> todays temp is. {feelsLike} °</h1>
             <h6>{firstTimeStamp}</h6>
