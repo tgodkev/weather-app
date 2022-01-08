@@ -42,11 +42,11 @@ function Weather(){
         const response = await fetch('https://api.openweathermap.org/data/2.5/forecast?zip=' + userCity + '&units=imperial&appid=301b282421d5ab0658e1410019293854');
         const weatherData = await response.json();
         
-        //console.log(weatherData.list)
+        console.log(weatherData.list)
 
-        setFeelsLike(weatherData.list[0].main.temp)
-        setIcon(weatherData.list[0].weather[0].icon)
-        setFirstTimeStamp(weatherData.list[0].dt_txt)
+        setFeelsLike(weatherData.list[3].main.temp)
+        setIcon(weatherData.list[3].weather[0].icon)
+        setFirstTimeStamp(weatherData.list[3].dt_txt)
 
         setNextDay(weatherData.list[11].main.temp)
         setSecondIcon(weatherData.list[11].weather[0].icon)
