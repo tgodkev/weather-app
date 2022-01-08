@@ -1,22 +1,31 @@
 import React, {useState} from 'react';
 
 function Weather(){
-
+    //state for day temps.
     const[feelsLike, setFeelsLike] = useState('');
     const[nextDay, setNextDay] = useState('');
     const[dayThree, setDayThree] = useState('');
     const[dayFour, setDayFour] = useState('');
     const[dayFive, setDayFive] = useState('');
     
+    // state for time stamps.
+    const [firstTimeStamp, setFirstTimeStamp] = useState('')
+    const[secondTimeStamp, setSecondTimeStamp] = useState('');
+    const[thirdTimeStamp, setThirdTimeStamp] = useState('');
+    const[fourthTimeStamp, setFourthTimeStamp] =useState('');
+    const[fifthTimeStamp, setFifthTimeStamp] = useState('');
     
-    
-    
+
+
+    //state for weather icons.
     const[icon, setIcon] = useState('');
     const[secondIcon, setSecondIcon] = useState('');
     const[thirdIcon, setThirdIcon] = useState('');
     const[fourthIcon, setFourthIcon] = useState('');
     const[fifthIcon, setFifthIcon] = useState('');
 
+
+    //state for user input for zip.
     const[city, setCity] = useState('');
     const[userCity, setUserCity] = useState('');
     
@@ -27,31 +36,35 @@ function Weather(){
     }
 
     async function getWeather(){
-        const response = await fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + userCity + '&units=imperial&appid=301b282421d5ab0658e1410019293854');
+        const response = await fetch('https://api.openweathermap.org/data/2.5/forecast?zip=' + userCity + '&units=imperial&appid=301b282421d5ab0658e1410019293854');
         const weatherData = await response.json();
         
-        //console.log(weatherData.list[2])
+        //console.log(weatherData.list)
 
-        setFeelsLike(weatherData.list[0].main.temp)
-        setIcon(weatherData.list[0].weather[0].icon)
+        setFeelsLike(weatherData.list[3].main.temp)
+        setIcon(weatherData.list[3].weather[0].icon)
+        setFirstTimeStamp(weatherData.list[3].dt_txt)
 
-        setNextDay(weatherData.list[1].main.temp)
-        setSecondIcon(weatherData.list[1].weather[0].icon)
+        setNextDay(weatherData.list[11].main.temp)
+        setSecondIcon(weatherData.list[11].weather[0].icon)
+        setSecondTimeStamp(weatherData.list[11].dt_txt)
 
-
-        setDayThree(weatherData.list[2].main.temp)
-        setThirdIcon(weatherData.list[2].weather[0].icon)
+        setDayThree(weatherData.list[19].main.temp)
+        setThirdIcon(weatherData.list[19].weather[0].icon)
+        setThirdTimeStamp(weatherData.list[19].dt_txt)
         
-        setDayFour(weatherData.list[3].main.temp)
-        setFourthIcon(weatherData.list[3].weather[0].icon)
+        setDayFour(weatherData.list[27].main.temp)
+        setFourthIcon(weatherData.list[27].weather[0].icon)
+        setFourthTimeStamp(weatherData.list[27].dt_txt)
         
-        setDayFive(weatherData.list[4].main.temp)
-        setFifthIcon(weatherData.list[4].weather[0].icon)
+        setDayFive(weatherData.list[35].main.temp)
+        setFifthIcon(weatherData.list[35].weather[0].icon)
+        setFifthTimeStamp(weatherData.list[35].dt_txt)
     
     }
     getWeather();
 
-    console.log(city)
+    //console.log(city)
 
     return(
         <div>
@@ -63,30 +76,37 @@ function Weather(){
                     <input type="text" 
                         onChange={e => setCity(e.target.value)}
                         value={city}
-                        placeholder='Enter City.'
+                        placeholder='Enter Zip.'
                     />
                     <button type='submit'> submit .</button>
                 </form>
             </div>
             <div className='one'>
-            <h1> current temp is.  {feelsLike} °</h1>
+            
             <img src={'https://openweathermap.org/img/w/' + icon + '.png'} alt="" />
+            <h1> todays temp is. {feelsLike} °</h1>
+            <h6>{firstTimeStamp}</h6>
             </div>
             <div className='two'>
-            <h1>The temp will be {nextDay}° </h1>
             <img src={'https://openweathermap.org/img/w/' + secondIcon + '.png'} alt="" />
+            <h1>The temp will be {nextDay}° </h1>
+            <h6>{secondTimeStamp}</h6>
             </div>
             <div className='three'>
-            <h1>the temp will be {dayThree}° </h1>
             <img src={'https://openweathermap.org/img/w/' + thirdIcon + '.png'} alt="" />
+            <h1>the temp will be {dayThree}° </h1>
+            <h6>{thirdTimeStamp}</h6>
             </div>
             <div className='four'>
-            <h1>the temp will be {dayFour}° </h1>
             <img src={'https://openweathermap.org/img/w/' + fourthIcon + '.png'} alt="" />
+            <h1>the temp will be {dayFour}° </h1>
+            <h6>{fourthTimeStamp}</h6>
             </div>
             <div className='five'>
-            <h1>the temp will be {dayFive}° </h1>
             <img src={'https://openweathermap.org/img/w/' + fifthIcon + '.png'} alt="" />
+            <h1>the temp will be {dayFive}° </h1>
+            <h6>{fifthTimeStamp}</h6>
+            
             </div>
         </div>
     )
