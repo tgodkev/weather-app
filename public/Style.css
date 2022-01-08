@@ -16,11 +16,14 @@ body{
     position: grid;
     width: 20%;
     height: 20%;
+    margin-top: 3%;
     margin-left: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     background-color: transparent;
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
+    border: solid 1px;
+    color: white;
 }
 
 .one{
@@ -29,9 +32,11 @@ body{
     width: 20%;
     height: 20%;
     margin-left: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
+    border: solid 1px;
+    color: white;
 }
 
 .two{
@@ -41,9 +46,11 @@ body{
     height: 20%;
    
     margin-left: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
+    border: solid 1px;
+    color: white;
 }
 
 .three{
@@ -53,9 +60,11 @@ body{
     height: 20%;
    
     margin-left: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
+    border: solid 1px;
+    color: white;
 }
 
 .four{
@@ -65,9 +74,11 @@ body{
     height: 20%;
     
     margin-left: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
+    border: solid 1px;
+    color: white;
 }
 
 .five{
@@ -76,17 +87,20 @@ body{
     width: 20%;
     height: 20%;
     margin-left: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
+    border: solid 1px;
+    color: white;
    
 }
 
 .input{
     margin-left: 30%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
+  color: white;
 }
 
 .search{
