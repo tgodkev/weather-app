@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Button from '@mui/material/Button';
 
 function Weather(){
     //state for day temps.
@@ -111,9 +112,9 @@ function Weather(){
                         placeholder='Enter Zip.'
                         className='search'
                     />
-                    <button type='submit'> submit .</button>
+                   <Button variant="contained" type='submit' size='small'>Submit.</Button>
                 </form>
-                {show && <h3> 6 Day weather forcast for {cityName}.</h3>}
+                {show && <h2> 6 Day weather forcast for {cityName}.</h2>}
             </div>
 
          { show && <div className='current'>
