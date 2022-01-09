@@ -4,7 +4,10 @@ body{
     padding: 0px;
     overflow-x: hidden;
     background-image: url('./wp9359084.jpg') ;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
   
  
 }
@@ -122,6 +125,7 @@ body{
 
 .search{
    margin-left: 5%;
+   background-color: white;
 }
 
 

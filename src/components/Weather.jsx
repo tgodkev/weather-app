@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 function Weather(){
     //state for day temps.
@@ -105,13 +106,10 @@ function Weather(){
                 <form 
                 onSubmit={handleClick}
                 >
+                <TextField id="outlined-basic" size='small' label="Enter Zip" variant="outlined" onChange={e => setCity(e.target.value)} className='search' />
                     
-                    <input type="text" 
-                        onChange={e => setCity(e.target.value)}
-                        value={city}
-                        placeholder='Enter Zip.'
-                        className='search'
-                    />
+                
+                    
                    <Button variant="contained" type='submit' size='small'>Submit.</Button>
                 </form>
                 {show && <h4 className='forcast'> 6 Day weather forcast for {cityName}.</h4>}
