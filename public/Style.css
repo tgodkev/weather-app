@@ -5,12 +5,11 @@ body{
     overflow-x: hidden;
     background-image: url('./wp9359084.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover ;
 }
 
 .weather{
     margin-top: 0px;
-
 }
 
 
@@ -24,8 +23,8 @@ body{
     width: 20%;
 }
 .current img{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
 }
 
 .one{
@@ -38,8 +37,8 @@ body{
     width: 20%;
 }
 .one img{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
 }
 
 .two{
@@ -53,8 +52,8 @@ body{
 }
 
 .two img{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
 }
 
 .three{
@@ -68,8 +67,8 @@ body{
 }
 
 .three img{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
 }
 
 
@@ -85,8 +84,8 @@ body{
 }
 
 .four img{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
 }
 
 .five{
@@ -101,8 +100,8 @@ body{
 }
 
 .five img{
-    width: 20%;
-    height: 20%;
+    width: 30%;
+    height: 30%;
 }
 
 .input{
