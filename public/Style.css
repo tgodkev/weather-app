@@ -110,13 +110,14 @@ body{
 
 .input{
     font-family: 'Bebas Neue', cursive;
-    margin-left: 10%;
+    margin-left: 15%;
     font-size: 20px;
     color: white;
   
 }
 .input button{
     margin-left: 4px;
+    background-color: grey;
 }
 
 .forcast{
