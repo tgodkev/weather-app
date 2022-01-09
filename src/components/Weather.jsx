@@ -101,7 +101,7 @@ function Weather(){
                     />
                     <button type='submit'> submit .</button>
                 </form>
-                {show && <h1>5 Day weather forcast for {cityName}.</h1>}
+                {show && <h3>5 Day weather forcast for {cityName}.</h3>}
             </div>
 
          { show && <div className='current'>
