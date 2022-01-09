@@ -19,6 +19,7 @@ body{
 
 .current{
     float: left;
+    
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
@@ -94,7 +95,6 @@ body{
 
 .five{
     float: left;
-
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
@@ -113,7 +113,9 @@ body{
     margin-left: 40%;
     font-size: 20px;
     color: white;
-  
+    display: inline-flexbox;
+    position: relative;
+    margin-right: 30%;
 }
 .input button{
     margin-left: 4px;
@@ -121,22 +123,23 @@ body{
 }
 
 .forcast{
- 
+    display: inline-block;
     font-size: 30px;
 }
 
 .search{
+    display: inline-block;
    margin-left: 5%;
    background-color: white;
 }
 
 
 .header{
-
+    display: inline-flexbox;
     position: relative;
     margin-top: 10%;
     margin-left: 38%;
     color: white;
     font-family: 'The Nautigal', cursive;
-    font-size: 40px;
+    font-size: 50px;
 }
