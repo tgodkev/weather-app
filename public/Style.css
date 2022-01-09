@@ -3,9 +3,10 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background-image: url('./wp9359084.jpg');
-    background-repeat: no-repeat;
-    background-size: cover ;
+    background-image: url('./wp9359084.jpg') ;
+    background-size: cover;
+  
+ 
 }
 
 .weather{
