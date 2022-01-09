@@ -87,12 +87,12 @@ function Weather(){
     //console.log(city)
 
     return(
-        <div>
+        <div className='weather'>
             <div className='input'>
                 <form 
                 onSubmit={handleClick}
                 >
-                    <h1>5 Day weather forcast for {cityName}.</h1>
+                    
                     <input type="text" 
                         onChange={e => setCity(e.target.value)}
                         value={city}
@@ -101,6 +101,7 @@ function Weather(){
                     />
                     <button type='submit'> submit .</button>
                 </form>
+                {show && <h1>5 Day weather forcast for {cityName}.</h1>}
             </div>
 
          { show && <div className='current'>
