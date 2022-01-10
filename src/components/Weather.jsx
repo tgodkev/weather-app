@@ -134,7 +134,7 @@ function Weather(){
             </div>}
 
             {show && <div className='three'>
-            <h2> {three}</h2>
+            <h3> {three}</h3>
             <img src={'https://openweathermap.org/img/w/' + thirdIcon + '.png'} alt="" />
             <h2> {dayThree}°F </h2>
             </div>}
