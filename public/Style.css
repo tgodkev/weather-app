@@ -17,7 +17,7 @@ body{
 .weather{
     margin-top: 0px;
     position: relative;
-    margin-left: 20%;
+    
  
 
 }
@@ -116,7 +116,7 @@ body{
 
 .input{
     font-family: 'Bebas Neue', cursive;
-    margin-left: 20%;
+    margin-left: 40%;
     font-size: 20px;
     color: white;
     display: inline-flexbox;
