@@ -17,7 +17,7 @@ body{
 .weather{
     margin-top: 0px;
     position: relative;
-    margin-left: 10%;
+    margin-left: 20%;
 
  
 
@@ -97,11 +97,9 @@ body{
 
 .input{
     font-family: 'Bebas Neue', cursive;
-    margin-left: 32%;
-    font-size: 20px;
+    margin-left: 15%;
     color: white;
-    display: inline-flexbox;
-    position: relative;
+    
 }
 .input button{
     margin-left: 4px;
@@ -110,12 +108,11 @@ body{
 
 .forcast{
     display: inline-block;
-    font-size: 26px;
+    
 }
 
 .search{
-    display: inline-block;
-   margin-left: 5%;
+   margin-left: 0%;
    background-color: white;
 }
 
@@ -124,8 +121,8 @@ body{
     display: inline-flexbox;
     position: relative;
     margin-top: 10%;
-    margin-left: 38%;
+    margin-left: 32%;
     color: white;
     font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
+   
 }

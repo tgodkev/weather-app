@@ -112,41 +112,41 @@ function Weather(){
                     
                    <Button variant="contained" type='submit' size='small'>Submit.</Button>
                 </form>
-                {show && <h4 className='forcast'> 6 Day weather forcast for {cityName}.</h4>}
+                {show && <h3 className='forcast'> 6 Day weather forcast for {cityName}.</h3>}
             </div>
 
          { show && <div className='current'>
-            <h3> {day}</h3>
+            <h2> {day}</h2>
             <img src={'https://openweathermap.org/img/w/' + currentIcon + '.png'} alt="" />
              <h2> {currentTemp}°F  </h2>
             </div>}
 
            {show &&  <div className='one'>
-           <h3> {one}</h3>
+           <h2> {one}</h2>
               <img src={'https://openweathermap.org/img/w/' + icon + '.png'} alt="" />
             <h2> {feelsLike}°F </h2>
             </div>}
 
             {show && <div className='two'>
-            <h3> {two}</h3>
+            <h2> {two}</h2>
             <img src={'https://openweathermap.org/img/w/' + secondIcon + '.png'} alt="" />
             <h2> {nextDay}°F </h2>
             </div>}
 
             {show && <div className='three'>
-            <h3> {three}</h3>
+            <h2> {three}</h2>
             <img src={'https://openweathermap.org/img/w/' + thirdIcon + '.png'} alt="" />
             <h2> {dayThree}°F </h2>
             </div>}
 
            {show && <div className='four'>
-           <h3> {four}</h3>
+           <h2> {four}</h2>
             <img src={'https://openweathermap.org/img/w/' + fourthIcon + '.png'} alt="" />
             <h2> {dayFour}°F </h2>
             </div>}
 
             {show && <div className='five'>
-            <h3> {fifth}</h3>
+            <h2> {fifth}</h2>
             <img src={'https://openweathermap.org/img/w/' + fifthIcon + '.png'} alt="" />
             <h2> {dayFive}°F </h2>
             
