@@ -17,6 +17,7 @@ body{
 .weather{
     margin-top: 0px;
     position: relative;
+    margin-left: 10%;
 
  
 
@@ -24,33 +25,30 @@ body{
 
 
 .current{
-    display: inline-grid;
+    display: inline-block;
     
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 7%;
     height: 15%;
     width: 15%;
 }
 
 .one{
-    display: inline-grid;
+    display: inline-block;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 7%;
     height: 15%;
     width: 15%;
 }
 
 
 .two{
-    display: inline-grid;
+    display: inline-block;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 7%;
     height: 15%;
     width: 15%;
 }
@@ -58,23 +56,21 @@ body{
 
 
 .three{
-    display: inline-grid;
+    display: inline-block;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 7%;
     height: 15%;
     width: 15%;
 }
 
 
 .four{
-    display: inline-grid;
+    display: inline-block;
  
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 7%;
     height: 15%;
     width: 15%;
 }
@@ -82,11 +78,10 @@ body{
 
 
 .five{
-    display: inline-grid;
+    display: inline-block;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 7%;
     height: 15%;
     width: 15%;
 }
@@ -94,7 +89,7 @@ body{
 
 .input{
     font-family: 'Bebas Neue', cursive;
-    margin-left: 38%;
+    margin-left: 32%;
     font-size: 20px;
     color: white;
     display: inline-flexbox;
