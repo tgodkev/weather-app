@@ -4,113 +4,117 @@ body{
     padding: 0px;
     overflow-x: hidden;
     background-image: url('./wp9359084.jpg') ;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+    height: 100%vh;
+    width: 100%vw;
+
   
  
 }
 
 .weather{
     margin-top: 0px;
+    position: relative;
+    margin-left: 5%
+
 }
 
 
 .current{
-    float: left;
+    display: inline-block;
     
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 5%;
+    margin: 6%;
     height: 20%;
     width: 20%;
 }
 .current img{
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
 }
 
 .one{
-    float: left;
+    display: inline-block;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 5%;
+    margin: 6%;
     height: 20%;
     width: 20%;
 }
 .one img{
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
 }
 
 .two{
-    float: left;
+    display: inline-block;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 5%;
+    margin: 6%;
     height: 20%;
     width: 20%;
 }
 
 .two img{
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
 }
 
 .three{
-    float: left;
+    display: inline-block;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 5%;
+    margin: 6%;
     height: 20%;
     width: 20%;
 }
 
 .three img{
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
 }
 
 
 .four{
-    float: left;
+    display: inline-block;
  
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 5%;
+    margin: 6%;
     height: 20%;
     width: 20%;
 }
 
 .four img{
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
 }
 
 .five{
-    float: left;
+    display: inline-block;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 5%;
+    margin: 6%;
     height: 20%;
     width: 20%;
 }
 
 .five img{
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
 }
 
 .input{
     font-family: 'Bebas Neue', cursive;
-    margin-left: 40%;
+    margin-left: 35%;
     font-size: 20px;
     color: white;
     display: inline-flexbox;
@@ -124,7 +128,7 @@ body{
 
 .forcast{
     display: inline-block;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .search{
@@ -140,6 +144,6 @@ body{
     margin-top: 10%;
     margin-left: 38%;
     color: white;
-    font-family: 'The Nautigal', cursive;
-    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
 }
