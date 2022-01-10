@@ -28,7 +28,7 @@ body{
     display: inline-grid;
     
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    
     color: white;
     height: 20%;
     width: 20%;
@@ -39,7 +39,7 @@ body{
 .one{
     display: inline-grid;
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    
     color: white;
     height: 20%;
     width: 20%;
@@ -50,7 +50,7 @@ body{
 .two{
     display: inline-grid;
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    
     color: white;
     height: 20%;
     width: 20%;
@@ -62,7 +62,7 @@ body{
 .three{
     display: inline-grid;
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    
     color: white;
     height: 20%;
     width: 20%;
@@ -74,7 +74,7 @@ body{
     display: inline-grid;
  
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    
     color: white;
     height: 20%;
     width: 20%;
@@ -86,7 +86,7 @@ body{
 .five{
     display: inline-grid;
     font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
+    
     color: white;
     height: 20%;
     width: 20%;
