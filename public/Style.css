@@ -25,72 +25,73 @@ body{
 
 
 .current{
-    display: inline-block;
+    display: inline-grid;
     
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     height: 15%;
     width: 15%;
-    margin: 7%;
+    
 }
 
 .one{
-    display: inline-block;
+    display: inline-grid;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     height: 15%;
     width: 15%;
-    margin: 7%;
+    
 }
 
 
 .two{
-    display: inline-block;
+    display: inline-grid;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     height: 15%;
     width: 15%;
-    margin: 7%;
+   
 }
 
 
 
 .three{
-    display: inline-block;
+    display: inline-grid;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     height: 15%;
     width: 15%;
-    margin: 7%;
+    
 }
 
 
 .four{
-    display: inline-block;
+    display: inline-grid;
  
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     height: 15%;
     width: 15%;
-    margin: 7%;
+   
 }
 
 
 
 .five{
-    display: inline-block;
+    display: inline-grid;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     height: 15%;
     width: 15%;
-    margin: 7%;
+  
 }
+
 
 
 .input{
