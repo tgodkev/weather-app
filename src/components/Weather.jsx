@@ -116,37 +116,37 @@ function Weather(){
             </div>
 
          { show && <div className='current'>
-            <h4>{day}</h4>
+            <h4> {day}</h4>
             <img src={'https://openweathermap.org/img/w/' + currentIcon + '.png'} alt="" />
-             <h1> {currentTemp}°F</h1>
+             <h1> {currentTemp}°F </h1>
             </div>}
 
            {show &&  <div className='one'>
            <h4> {one}</h4>
               <img src={'https://openweathermap.org/img/w/' + icon + '.png'} alt="" />
-            <h1>  {feelsLike}°F </h1>
+            <h1> {feelsLike}°F </h1>
             </div>}
 
             {show && <div className='two'>
-            <h4>{two}</h4>
+            <h4> {two}</h4>
             <img src={'https://openweathermap.org/img/w/' + secondIcon + '.png'} alt="" />
-            <h1>{nextDay}°F </h1>
+            <h1> {nextDay}°F </h1>
             </div>}
 
             {show && <div className='three'>
-            <h4>{three}</h4>
+            <h4> {three}</h4>
             <img src={'https://openweathermap.org/img/w/' + thirdIcon + '.png'} alt="" />
             <h1> {dayThree}°F </h1>
             </div>}
 
            {show && <div className='four'>
-           <h4>{four}</h4>
+           <h4> {four}</h4>
             <img src={'https://openweathermap.org/img/w/' + fourthIcon + '.png'} alt="" />
             <h1> {dayFour}°F </h1>
             </div>}
 
             {show && <div className='five'>
-            <h4>{fifth}</h4>
+            <h4> {fifth}</h4>
             <img src={'https://openweathermap.org/img/w/' + fifthIcon + '.png'} alt="" />
             <h1> {dayFive}°F </h1>
             
