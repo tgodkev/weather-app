@@ -17,106 +17,84 @@ body{
 .weather{
     margin-top: 0px;
     position: relative;
-    
+
  
 
 }
 
 
 .current{
-    display: inline-block;
+    display: inline-grid;
     
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 6%;
-    height: 20%;
-    width: 20%;
-}
-.current img{
-    width: 35%;
-    height: 35%;
+    margin: 7%;
+    height: 15%;
+    width: 15%;
 }
 
 .one{
-    display: inline-block;
+    display: inline-grid;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     margin: 7%;
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
 }
-.one img{
-    width: 35%;
-    height: 35%;
-}
+
 
 .two{
-    display: inline-block;
+    display: inline-grid;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     margin: 7%;
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
 }
 
-.two img{
-    width: 35%;
-    height: 35%;
-}
+
 
 .three{
-    display: inline-block;
+    display: inline-grid;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
-    margin: 6%;
-    height: 20%;
-    width: 20%;
-}
-
-.three img{
-    width: 35%;
-    height: 35%;
+    margin: 7%;
+    height: 15%;
+    width: 15%;
 }
 
 
 .four{
-    display: inline-block;
+    display: inline-grid;
  
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     margin: 7%;
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
 }
 
-.four img{
-    width: 35%;
-    height: 35%;
-}
+
 
 .five{
-    display: inline-block;
+    display: inline-grid;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: white;
     margin: 7%;
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
 }
 
-.five img{
-    width: 35%;
-    height: 35%;
-}
 
 .input{
     font-family: 'Bebas Neue', cursive;
-    margin-left: 40%;
+    margin-left: 38%;
     font-size: 20px;
     color: white;
     display: inline-flexbox;
